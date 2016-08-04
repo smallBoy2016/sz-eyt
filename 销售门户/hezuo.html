@@ -36,12 +36,15 @@
 
 	<!-- CSS Customization -->
 	<link rel="stylesheet" href="assets/css/custom.css">
+	<style>
+	.navbar-fixed-top{position: fixed;}
+	</style>
 </head>
 
 <body>
 	<div class="wrapper">
 		<!--=== Header ===-->
-		<div class="header">
+		<div class="header navbar-fixed-top">
 			<div class="container">
 				<!-- Logo -->
 				<a class="logo" href="home.html">
@@ -58,7 +61,7 @@
 						<li class="topbar-devider"></li>
 						<li><a href="forget.html">找回密码</a></li>
 						<li class="topbar-devider"></li>
-						<li><a href="page_login.html">其他</a></li>
+						<li><a href="404.html">其他</a></li>
 					</ul>
 				</div>
 				<!-- End Topbar -->
@@ -76,7 +79,7 @@
 				<div class="container">
 					<ul class="nav navbar-nav">
 						<!-- Home -->
-						<li class="dropdown">
+						<li class="dropdown active">
 							<a href="home.html" class="dropdown-toggle">
 								首页
 							</a>
@@ -84,8 +87,8 @@
 						<!-- End Home -->
 
 						<!-- Pages -->
-						<li class="dropdown active">
-							<a href="hezuo.html" class="dropdown-toggle">
+						<li class="dropdown">
+							<a href="hezuo.html" class="dropdown-toggle" target="_blank">
 								合作管理
 							</a>
 						</li>
@@ -93,7 +96,7 @@
 
 						<!-- Blog -->
 						<li class="dropdown">
-							<a href="qiye.html" class="dropdown-toggle">
+							<a href="qiye.html" class="dropdown-toggle" target="_blank">
 								企业管理
 							</a>
 						</li>
@@ -155,7 +158,7 @@
 		<!--=== End Header ===-->
 
 		<!--=== Profile ===-->
-		<div class="container content profile">
+		<div class="container content profile" style="margin-top: 68px;">
 			<div class="row">
 				<!--Left Sidebar-->
 				<div class="col-md-3 md-margin-bottom-40">
