@@ -1,175 +1,123 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<html lang="en">
 <head>
-	<title>Registration | Unify - Responsive Website Template</title>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
 
-	<!-- Meta -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="">
+  <style>
+   *{margin:0;padding:0;} 
+   body{font-family: Microsoft Yahei;font-size: 14px;background: #f4f4f4;}
+   a{text-decoration: none;color:#333;}
+   nav{width: 1200px;margin:0 auto;text-align: right;font-size: 12px;line-height: 30px;}
+   .div{
+    width: 320px;height: 500px;margin: 40px auto;padding:20px;
+   }
+   h3{text-align: center;font-size: 20px;font-weight: 400;margin: 20px 0;color: #333;}
 
-	<!-- CSS Global Compulsory -->
-	<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/style.css">
+   label{
+    color:#666;
+   }
+   label>p{height: 28px;line-height:28px;font-size:10px;color:red;
+        margin-left: 80px;
+   }
 
-	<!-- CSS Header and Footer -->
-	<link rel="stylesheet" href="assets/css/headers/header-default.css">
-	<link rel="stylesheet" href="assets/css/footers/footer-v1.css">
-
-	<!-- CSS Implementing Plugins -->
-	<link rel="stylesheet" href="assets/plugins/animate.css">
-	<link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
-	<link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
-
-	<!-- CSS Page Style -->
-	<link rel="stylesheet" href="assets/css/pages/page_log_reg_v1.css">
-
-	<!-- CSS Theme -->
-	<link rel="stylesheet" href="assets/css/theme-colors/default.css" id="style_color">
-	<link rel="stylesheet" href="assets/css/theme-skins/dark.css">
-
-	<!-- CSS Customization -->
-	<link rel="stylesheet" href="assets/css/custom.css">
+   .eyt1{outline: none;width: 180px;height: 26px;padding-left: 8px;outline: none;border:1px solid #ccc;border-radius: 6px;color:#999;background: #f4f4f4;padding-right:10px;margin-right: 10px;}
+   .color-red{color:red;}
+   .div2{width: 180px;
+    margin:0 auto;margin-top: 10px;margin-bottom: 30px;
+   }
+   .div3{
+    width: 86%;background:#2ec271;height: 40px;outline:none;border:none;border-radius: 6px;color:#fff;
+    font-size: 20px;
+   }
+   .div3:hover{
+    background:#1b7845;cursor: pointer; 
+   }
+   .bg{
+    width: 100%;height: 100%;position: fixed;top:0;
+    background:rgba(51,51,51,0.8);display: none;
+   }
+   .bg2{width: 320px;height: 180px;background:#fff;position: absolute;
+   }
+   .t1{height: 30px;background:rgb(46,194,113);}
+   .t2{height: 150px;}
+   #btn{
+    background: #2ec271;outline: none;border: none;width: 180px;height: 30px;border-radius: 6px;margin:10px 0 10px 70px;
+    cursor: pointer;color:#fff;font-size: 16px;
+   }
+  </style>
 </head>
-
 <body>
-	<div class="wrapper">
-		<!--=== Header ===-->
-		<div class="header">
-					<div class="container">
-						<!-- Logo -->
-						<a class="logo" href="index.html">
-							<img src="assets/img/logo1-default.png" alt="Logo">
-						</a>
-						<!-- End Logo -->
+<nav>
+  <a href="login.html">登陆</a> | <a href="home.html" style="color:#2ec271;">返回首页</a>    
+</nav>
 
-						<!-- Topbar -->
-						<div class="topbar">
-							<ul class="loginbar pull-right">
-								<li><a href="login.html" id="eytBtn2">登录</a></li>
-								<li class="topbar-devider"></li>
-								<li><a href="home.html">返回首页</a></li>
-							</ul>
-						</div>
-						<!-- End Topbar -->
 
-						<!-- Toggle get grouped for better mobile display -->
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="fa fa-bars"></span>
-						</button>
-						<!-- End Toggle -->
-					</div><!--/end container-->
+<div class="div">
+  <img src="assets/img/logo22.png" alt="" width="304" height="101" style="margin-left: -15px;">
+  <h3>注册一个新的账号</h3>
+  <label for="" style="color:#666;">用户名 <input class="eyt1" type="text" placeholder="请输入用户名" style="margin-left: 30px;">
+    <p>你的用户名已经注册</p>
+  </label>
+  <label class="margin-bottom-20">邮箱地址 <span class="color-red">*</span><input class="eyt1" type="text" placeholder="请输入邮箱地址" style="margin-left: 10px;">
+    <p></p>
+  </label>
+  <label>密码<span class="color-red">*</span><input class="eyt1"  type="password" placeholder="请输入密码" style="margin-left: 42px;">
+    <p></p>
+  </label>
+  <label>密码<span class="color-red">*</span><input class="eyt1"  type="password" placeholder="请输入密码" style="margin-left: 42px;">
+    <p></p>
+  </label>
+  <p class="div2"><label><input style="height: 12px;width: 16px;border:none;" type="checkbox">
+  我已经阅读并同意<a href="" style="color:green;">条款</a>
+  </label></p>
+  
+  <button type="submit" class="div3">注册</button>
 
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
-						<div class="container">
-							<ul class="nav navbar-nav">
-								<!-- Home -->
-								
 
-								<!-- Search Block -->
-								<li>
-									<i class="search fa fa-search search-btn"></i>
-									<div class="search-open">
-										<div class="input-group animated fadeInDown">
-											<input type="text" class="form-control" placeholder="Search">
-											<span class="input-group-btn">
-												<button class="btn-u" type="button">查找</button>
-											</span>
-										</div>
-									</div>
-								</li>
-								<!-- End Search Block -->
-							</ul>
-						</div><!--/end container-->
-					</div><!--/navbar-collapse-->
-		</div>
-		<!--=== End Header ===-->
+</div>
 
-		<!--=== Breadcrumbs ===-->
-		<div class="breadcrumbs">
-			<div class="container">
-				<h1 class="pull-left">注册</h1>
-			</div><!--/container-->
-		</div><!--/breadcrumbs-->
-		<!--=== End Breadcrumbs ===-->
+<!-- 这里是弹出框 -->
+<div class="bg">
+  <div class="bg2">
+    <div class="t1"></div>
+    <div class="t2">
+      <h3 style="color:#2ec271;font-size: 24px;">恭喜您</h3>
+      <p style="text-align: center;color:#2ec271;font-size: 16px;">您已经注册成功!<img src="assets/img/sec.png" alt="" width="20" style="margin-left: 10px;"></p>
+      <button id="btn">确定</button>
+    </div>
+  </div>
+</div>
 
-		<!--=== Content Part ===-->
-		<div class="container content">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-					<form class="reg-page">
-						<div class="reg-header">
-							<h2>注册一个新的账号</h2>
-							<p>如果你已经有一个账号，请点击<a href="login.html" class="color-green">登录</a></p>
-						</div>
+<script>
+  
+(function drag(){
 
-						<label>用户名</label>
-						<input type="text" class="form-control margin-bottom-20">
+var aDiv3 = document.getElementsByClassName('div3');
+var aBg = document.getElementsByClassName('bg');
+var aBg2 = document.getElementsByClassName('bg2');
+var oBtn = document.getElementById('btn');
+var WinH = document.body.clientHeight;
+var WinW = document.body.clientWidth;
+var Top = (WinH -180)/2;
+var Left = (WinW -320)/2;
 
-						<label>邮箱地址 <span class="color-red">*</span></label>
-						<input type="text" class="form-control margin-bottom-20">
 
-						<div class="row">
-							<div class="col-sm-6">
-								<label>密码<span class="color-red">*</span></label>
-								<input type="password" class="form-control margin-bottom-20">
-							</div>
-							<div class="col-sm-6">
-								<label>确认密码<span class="color-red">*</span></label>
-								<input type="password" class="form-control margin-bottom-20">
-							</div>
-						</div>
+// aDiv3[0].style.display = 'none';
+aDiv3[0].onclick = function(){
+  aBg[0].style.display = 'block';
+  aBg2[0].style.top = Top + 'px';
+  aBg2[0].style.left = Left + 'px';
+};
+oBtn.onclick = function(){
+  aBg[0].style.display = 'none';
+};
 
-						<hr>
+})();
 
-						<div class="row">
-							<div class="col-lg-6 checkbox">
-								<label>
-									<input type="checkbox">
-									我已经阅读<a href="page_terms.html" class="color-green">条款</a>
-								</label>
-							</div>
-							<div class="col-lg-6 text-right">
-								<button class="btn-u" type="submit">注册</button>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div><!--/container-->
-		<!--=== End Content Part ===-->
-
-		<!--=== End Footer Version 1 ===-->
-	</div>
-
-	<!-- JS Global Compulsory -->
-	<script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/plugins/jquery/jquery-migrate.min.js"></script>
-	<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-	<!-- JS Implementing Plugins -->
-	<script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
-	<script type="text/javascript" src="assets/plugins/smoothScroll.js"></script>
-	<!-- JS Customization -->
-	<script type="text/javascript" src="assets/js/custom.js"></script>
-	<!-- JS Page Level -->
-	<script type="text/javascript" src="assets/js/app.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/style-switcher.js"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function() {
-			App.init();
-			StyleSwitcher.initStyleSwitcher();
-		});
-	</script>
-<!--[if lt IE 9]>
-	<script src="assets/plugins/respond.js"></script>
-	<script src="assets/plugins/html5shiv.js"></script>
-	<script src="assets/plugins/placeholder-IE-fixes.js"></script>
-	<![endif]-->
+</script>
 
 </body>
 </html>

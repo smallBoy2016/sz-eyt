@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=320,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta charset="UTF-8">
+  <title>网上大厅</title>
+  <link rel="stylesheet" href="css/public.css">
+  <link rel="stylesheet" href="css/news.css">
+</head>
+<body>
+ 
+<div class="wrap">
+  <div class="menu">
+    <ul id="ul">
+      <li><a href="on_core.html">中心介绍</a></li>
+      <li style="background: #f72;"><a href="javascript:;">中心新闻</a></li>
+      <li><a href="on_policy.html">政策法规</a></li>
+      <li><a href="on_guide.html">办事指南</a></li>
+    </ul>  
+  </div>
+  
+  <div class="content">
+    <div class="content_1"id="id1">
+      <div class="b_g">中心新闻</div>
+      <img src="img/online/new_01.png" width="360">
+      <div class="sub_div">
+        <p>2016-05-13区政务服务中心贯彻落实《关于弘扬相城风气防治为官不为的问责办法》</p>
+        <p>2016-05-26国税局窗口打赢“营改增”攻坚战</p>
+        <p>2016-05-13区政务服务中心贯彻落实《关于弘扬相城风气防治为官不为的问责办法》</p>
+        <p>2016-05-26国税局窗口打赢“营改增”攻坚战</p>
+      </div>
+      <div class="sub_div2">
+        <a href="javascript:;"><img src="img/online/right.png" width="7" height="14">&nbsp;&nbsp;&nbsp;&nbsp;上一页</a>1/6<a href="javascript:;">下一页&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/online/left.png" width="7" height="14"></a>
+      </div>
+    </div>
+    <div class="content_2" id="id2">
+      <div class="b_g">中心公告</div>
+      <div class="sub_div">
+        <p>2016-05-13区政务服务中心贯彻落实《关于弘扬相城风气防治为官不为的问责办法》</p>
+        <p>2016-05-26国税局窗口打赢“营改增”攻坚战</p>
+        <p>2016-05-13区政务服务中心贯彻落实《关于弘扬相城风气防治为官不为的问责办法》</p>
+        <p>2016-05-26国税局窗口打赢“营改增”攻坚战</p>
+      </div>
+      <div class="sub_div2">
+        <a href="javascript:;"><img src="img/online/right.png" width="7" height="14">&nbsp;&nbsp;&nbsp;&nbsp;上一页</a>1/6<a href="javascript:;">下一页&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/online/left.png" width="7" height="14"></a>
+      </div>
+    </div>
+    <div class="content_3" id="id3">
+       <div class="b_g">中心简报</div>
+       <div class="sub_div">
+         <p>2016-05-13区政务服务中心贯彻落实《关于弘扬相城风气防治为官不为的问责办法》</p>
+         <p>2016-05-26国税局窗口打赢“营改增”攻坚战</p>
+         <p>2016-05-13区政务服务中心贯彻落实《关于弘扬相城风气防治为官不为的问责办法》</p>
+         <p>2016-05-26国税局窗口打赢“营改增”攻坚战</p>
+       </div>
+       <div class="sub_div2">
+         <a href="javascript:;"><img src="img/online/right.png" width="7" height="14">&nbsp;&nbsp;&nbsp;&nbsp;上一页</a>1/6<a href="javascript:;">下一页&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/online/left.png" width="7" height="14"></a>
+       </div>     
+    </div>
+
+   
+    <div style="height: 10px;"></div>
+  </div>
+  
+
+  <div class="box">
+    <ul>
+       <li><a href="#id1">中心新闻</a></li>
+       <li><a href="#id2">中心公告</a></li>
+       <li><a href="#id3">中心简报</a></li>
+     </ul> 
+  </div>
+
+  <div class="win_bank">
+    <img src="img/service/top0.6.png" width="25" height="25">
+  </div>
+</div> 
+
+<script>
+
+//下拉显示
+var oBox = document.getElementsByClassName('box');
+var aLi = document.getElementById('ul').getElementsByTagName('li');
+var on = true;
+aLi[1].addEventListener('touchstart',function(){
+
+  if(on){
+    oBox[0].style.display = 'block';
+    on = false;  
+  }else{
+    oBox[0].style.display = 'none';
+    on = true;
+  }
+    
+});
+
+//置顶
+(function bank(){
+  var oBank = document.getElementsByClassName("win_bank");
+
+  bankTop(oBank[0]);
+    
+function bankTop(obj){
+  obj.addEventListener("touchstart",function(){
+    var H = document.body.scrollTop;
+    var timer = setInterval(function(){
+      H -=16;
+      document.body.scrollTop = H;
+      if (H <= 0) {
+        clearInterval(timer);
+      } 
+    },10);
+  });
+}
+})();
+</script>
+
+</body>
+</html>

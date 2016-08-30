@@ -90,8 +90,8 @@
 				<div class="container">
 					<ul class="nav navbar-nav">
 						<!-- Home -->
-						<li class="dropdown active">
-							<a href="home.html" class="dropdown-toggle">
+						<li class="dropdown">
+							<a href="javascript:;" class="dropdown-toggle">
 								首页
 							</a>
 						</li>
@@ -99,7 +99,7 @@
 
 						<!-- Pages -->
 						<li class="dropdown">
-							<a href="cooperation.html" class="dropdown-toggle">
+							<a href="javascript:;" class="dropdown-toggle">
 								合作
 							</a>
 						</li>
@@ -107,7 +107,7 @@
 
 						<!-- Blog -->
 						<li class="dropdown">
-							<a href="recruit.html" class="dropdown-toggle">
+							<a href="javascript:;" class="dropdown-toggle">
 								招聘
 							</a>
 						</li>
@@ -789,6 +789,13 @@
 				$('#eytDiv2').animate({top: -1000},400);
 			});
 
+			$('.nav').find('li').on('click',function(){
+				// $(this).removeClass('active');
+				// alert($(this).index());
+				$('.nav').find('li').siblings().removeClass('active');
+				var index = $(this).index();
+				$('.nav').find('li').eq(index).addClass('active');
+			});
 
 		});
 	</script>

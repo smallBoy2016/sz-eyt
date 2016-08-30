@@ -39,6 +39,7 @@
 	<style>
 	.navbar-fixed-top{position: fixed;}
 	.profile{margin-top: 68px;}
+	.active2{background: red;}
 	</style>
 </head>
 
@@ -78,10 +79,10 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
 				<div class="container">
-					<ul class="nav navbar-nav">
+					<ul class="nav navbar-nav" id="eytUl">
 						<!-- Home -->
-						<li class="dropdown active">
-							<a href="home.html" class="dropdown-toggle">
+						<li class="dropdown">
+							<a href="javascript:;" class="dropdown-toggle">
 								首页
 							</a>
 						</li>
@@ -89,7 +90,7 @@
 
 						<!-- Pages -->
 						<li class="dropdown">
-							<a href="hezuo.html" class="dropdown-toggle" target="_blank">
+							<a href="javascript:;">
 								合作管理
 							</a>
 						</li>
@@ -97,7 +98,7 @@
 
 						<!-- Blog -->
 						<li class="dropdown">
-							<a href="qiye.html" class="dropdown-toggle" target="_blank">
+							<a href="javascript:;">
 								企业管理
 							</a>
 						</li>
@@ -105,7 +106,7 @@
 
 						<!-- Portfolio -->
 						<li class="dropdown">
-							<a href="chanp.html">
+							<a href="javascript:;">
 								产品管理
 							</a>
 						</li>
@@ -113,7 +114,7 @@
 
 						<!-- Features -->
 						<li class="dropdown">
-							<a href="recruit.html" class="dropdown-toggle">
+							<a href="javascript:;" class="dropdown-toggle">
 								招聘管理
 							</a>
 						</li>
@@ -121,19 +122,19 @@
 
 						<!-- Shortcodes -->
 						<li class="dropdown mega-menu-fullwidth">
-							<a href="kehu.html" class="dropdown-toggle">
+							<a href="javascript:;" class="dropdown-toggle">
 								客户管理
 							</a>
 						</li>
 
 						<li class="dropdown mega-menu-fullwidth">
-							<a href="study.html" class="dropdown-toggle">
+							<a href="sjavascript:;" class="dropdown-toggle">
 								学习中心
 							</a>
 						</li>
 
 						<li class="dropdown mega-menu-fullwidth">
-							<a href="xiaoxi.html" class="dropdown-toggle">
+							<a href="javascript:;" class="dropdown-toggle">
 								消息管理
 							</a>
 						</li>
@@ -892,8 +893,56 @@
 			App.initScrollBar();
 			Datepicker.initDatepicker();
 			StyleSwitcher.initStyleSwitcher();
+
 		});
+
+/*		$('.nav').find('li').on('click',function(){
+			// $(this).removeClass('active');
+			// alert($(this).index());
+			$('.nav').find('li').siblings().removeClass('active');
+			var index = $(this).index();
+			$('.nav').find('li').eq(index).addClass('active');
+		});*/
+	var oUl =	document.getElementById('eytUl');
+	var aLi = oUl.getElementsByTagName('li');
+	for(var i=0;i<aLi.length;i++){
+		aLi[i].index = i;
+
+		aLi[i].addEventListener("click",function(){
+
+					getFoucs();
+	/*			if(this.index == 0){
+					alert(1);
+					window.location.href = 'home.html';
+					aLi[0].style.background = 'green';*/
+
+
+
+			// alert(this.index);
+			// this.style.background = 'red';
+		});
+	}
+	function getFoucs(){
+		var xhr = new XMLHttpRequest();
+
+		xhr.open('get','chanp.html',true);
+		xhr.send();
+
+		xhr.onreadystatechange = function(){
+			if(xhr.readyState == 4){
+				if(xhr.status == 200){
+					alert(1);
+				}else{
+					alert(99);
+				}
+			}
+		}
+
+	}
+
 	</script>
+
+
 <!--[if lt IE 9]>
 	<script src="assets/plugins/respond.js"></script>
 	<script src="assets/plugins/html5shiv.js"></script>

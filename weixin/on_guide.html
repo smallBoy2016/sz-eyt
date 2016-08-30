@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=320,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta charset="UTF-8">
+  <title>网上大厅</title>
+  <link rel="stylesheet" href="css/public.css">
+  <link rel="stylesheet" href="css/on_guide.css">
+</head>
+<body>
+ 
+<div class="wrap">
+  <div class="menu">
+    <ul id="UL">
+      <li><a href="on_core.html">中心介绍</a></li>
+      <li><a href="on_news.html">中心新闻</a></li>
+      <li><a href="on_policy.html">政策法规</a></li>
+      <li style="background: #f72;"><a href="javascript:;">办事指南</a></li>
+    </ul>  
+  </div>
+  
+  <div class="content">
+    <div class="content_1" id="id1">
+      <div class="b_g">办事窗口分布</div>
+      <ul id="ul">      
+      </ul>      
+    </div>
+    <div class="content_2" id="id2">
+      <div class="b_g">办事窗口电话</div>
+      <ul id="ul2">
+        <li>
+          <div class="div1">
+            <img src="img/service/logo/AJ-R.png" width="40" height="40">
+          </div>
+          <div class="div2">发改</div>
+          <div class="div3">
+            <p>0512-67591801</p>
+            <p>0512-67591801</p>
+          </div>
+          <img class="div4" src="img/online/phone.png" width="26" height="26">
+        </li>
+        <li>
+          <div class="div1">
+            <img src="img/service/logo/AJ-R.png" width="40" height="40">
+          </div>
+          <div class="div2">发改</div>
+          <div class="div3">
+            <p>0512-67591801</p>
+            <p>0512-67591801</p>
+          </div>
+          <img class="div4" src="img/online/phone.png" width="26" height="26">
+        </li>
+        <li>
+          <div class="div1">
+            <img src="img/service/logo/AJ-R.png" width="40" height="40">
+          </div>
+          <div class="div2">发改</div>
+          <div class="div3">
+            <p>0512-67591801</p>
+            <p>0512-67591801</p>
+          </div>
+          <img class="div4" src="img/online/phone.png" width="26" height="26">
+        </li>
+      </ul> 
+      <div class="sub_div2">
+        <a href="javascript:;"><img src="img/online/right.png" width="7" height="14">&nbsp;&nbsp;&nbsp;&nbsp;上一页</a>1/3<a href="javascript:;">下一页&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/online/left.png" width="7" height="14"></a>
+      </div>     
+    </div>
+    <div class="content_3" id="id3">
+      <div class="b_g">办公时间</div>
+      <p>服务时间：周一至周五</p>      
+      <p>上午：9：00--11：45&nbsp;&nbsp;下午13：00--16：45</p>      
+      <p>周六对外服务</p>      
+    </div>
+    <div class="content_4" id="id4">
+      <div class="b_g">办事地图</div>
+      <div style="height: 200px;border: 2px solid #ccc">百度地图API接口</div>      
+      <p>地址：苏州市相城区元和街道庆元路168号市民服务中心</p>
+    </div>
+  </div>
+  <div style="height: 200px;"></div>
+
+  <div class="box">
+    <ul>
+       <li><a href="#id1">办事窗口分布</a></li>
+       <li><a href="#id2">办事窗口电话</a></li>
+       <li><a href="#id3">办公时间</a></li>
+       <li><a href="#id4">办公地图</a></li>
+     </ul> 
+  </div>
+
+  <div class="win_bank">
+    <img src="img/service/top0.6.png" width="25" height="25">
+  </div>
+</div> 
+
+<script>
+
+var arrName = [
+    "安检",
+    "财政",
+    "地税",
+    "公安",
+    "国税",
+    "市监",
+    "国土",
+    "环保",
+    "发改",
+    "经信",
+    "住建",
+    "交运",
+    "教育",
+    "科发",
+    "旅游",
+    "民政",
+    "农业",
+    "气象",
+    "人社",
+    "司法",
+    "文体",
+    "商务",
+    "卫计",
+    "规划",
+    "水利",
+    "宗教",
+    "消防大队",
+    "城管"
+  ];
+var HTML = '';
+var oUl = document.getElementById('ul');
+
+for(var i=0;i<arrName.length;i++){
+  HTML += "<li>"+arrName[i]+"</li>";
+}
+oUl.innerHTML = HTML;
+
+//下拉菜单
+//下拉显示
+var oBox = document.getElementsByClassName('box');
+var aLi = document.getElementById('UL').getElementsByTagName('li');
+var on = true;
+aLi[3].addEventListener('touchstart',function(){
+
+  if(on){
+    oBox[0].style.display = 'block';
+    on = false;  
+  }else{
+    oBox[0].style.display = 'none';
+    on = true;
+  }
+    
+});
+//置顶
+(function bank(){
+  var oBank = document.getElementsByClassName("win_bank");
+
+  bankTop(oBank[0]);
+    
+function bankTop(obj){
+  obj.addEventListener("touchstart",function(){
+    var H = document.body.scrollTop;
+    var timer = setInterval(function(){
+      H -=16;
+      document.body.scrollTop = H;
+      if (H <= 0) {
+        clearInterval(timer);
+      } 
+    },10);
+  });
+}
+})();
+</script>
+
+</body>
+</html>
