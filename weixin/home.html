@@ -34,36 +34,36 @@
   <div class="menu">
     <ul>
       <li>
-        <div><img src="img/home/icon03.png" width=22 height=23 alt=""></div>
-        <a href="javascript:;">绿色通道</a>
+        <div><img src="img/home/home_icon01.png" width=22 height=23 alt=""></div>
+        <a href="javascript:;">交通指引</a>
       </li>
       <li>
-        <div><img src="img/home/icon04.png" width=22 height=23 alt=""></div>
-        <a href="javascript:;">窗口电话</a>
+        <div><img src="img/home/home_icon02.png" width=22 height=23 alt=""></div>
+        <a href="javascript:;">天气预报</a>
       </li>
       <li>
-        <div><img src="img/home/icon05.png" width=22 height=23 alt=""></div>
-        <a href="javascript:;">农民办事</a>
+        <div><img src="img/home/home_icon03.png" width=22 height=23 alt=""></div>
+        <a href="javascript:;">快递查询</a>
       </li>
       <li>
-        <div><img src="img/home/icon06.png" width=22 height=23 alt=""></div>
-        <a href="javascript:;">残疾人办事</a>
+        <div><img src="img/home/home_icon04.png" width=22 height=23 alt=""></div>
+        <a href="javascript:;">常用热线</a>
       </li>
       <li>
-        <div><img src="img/home/icon07.png" width=22 height=23 alt=""></div>
-        <a href="javascript:;">企业办事</a>
+        <div><img src="img/home/home_icon05.png" width=22 height=23 alt=""></div>
+        <a href="javascript:;">办件查询</a>
       </li>
       <li>
-        <div><img src="img/home/icon03.png" width=22 height=23 alt=""></div>
-        <a href="javascript:;">生儿育女</a>
+        <div><img src="img/home/home_icon06.png" width=22 height=23 alt=""></div>
+        <a href="javascript:;">办事指南</a>
       </li>
       <li>
-        <div><img src="img/home/icon09.png" width=22 height=23 alt=""></div>
-        <a href="javascript:;">民间组织</a>
+        <div><img src="img/home/home_icon07.png" width=22 height=23 alt=""></div>
+        <a href="javascript:;">窗口介绍</a>
       </li>
       <li>
-        <div><img src="img/home/icon03.png" width=22 height=23 alt=""></div>
-        <a href="javascript:;">个人办事</a>
+        <div><img src="img/home/home_icon08.png" width=22 height=23 alt=""></div>
+        <a href="javascript:;">我要预约</a>
       </li>
     </ul>
   </div>
@@ -109,6 +109,14 @@ window.onload = function(){
 //链接跳转  
   var allA = document.getElementsByTagName('a');
 
+  var news_title = document.getElementsByClassName('news_title');
+  var guide_left = document.getElementsByClassName('guide_left');
+  var guide_right = document.getElementsByClassName('guide_right');
+  var arrPath = [
+    "ser_green_path.html",
+    "ser_green_path.html",
+  ];
+
 
   for(var i=0;i<allA.length;i++){
     allA[i].parentNode.addEventListener('touchstart',function(){
@@ -119,7 +127,24 @@ window.onload = function(){
   allA[0].parentNode.addEventListener('touchstart',function(){
     window.location.href = 'ser_green_path.html';
   });
-
+  allA[5].parentNode.addEventListener('touchstart',function(){
+    window.location.href = 'on_guide.html';
+  });
+  allA[6].parentNode.addEventListener('touchstart',function(){
+    window.location.href = 'ser_window.html';
+  });
+  allA[7].parentNode.addEventListener('touchstart',function(){
+    window.location.href = 'ser_guide.html';
+  });
+  news_title[0].parentNode.addEventListener('touchstart',function(){
+    window.location.href = 'on_news.html';
+  });
+  guide_left[0].addEventListener('touchstart',function(){
+    window.location.href = 'on_policy.html';
+  });
+  guide_right[0].addEventListener('touchstart',function(){
+    window.location.href = 'ser_guide.html';
+  });
 
   function baidu(){
     window.location.href = 'http://www.baidu.com';

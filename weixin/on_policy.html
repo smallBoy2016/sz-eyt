@@ -12,7 +12,7 @@
  
 <div class="wrap">
   <div class="menu">
-    <ul>
+    <ul id="UL">
       <li><a href="on_core.html">中心介绍</a></li>
       <li><a href="on_news.html">中心新闻</a></li>
       <li style="background: #f72;"><a href="javascript:;">政策法规</a></li>
@@ -102,6 +102,22 @@
 </div> 
 
 <script>
+
+var oBox = document.getElementsByClassName('box');
+var aLi = document.getElementById('UL').getElementsByTagName('li');
+var on = true;
+aLi[2].addEventListener('touchstart',function(){
+
+  if(on){
+    oBox[0].style.display = 'block';
+    on = false;  
+  }else{
+    oBox[0].style.display = 'none';
+    on = true;
+  }
+    
+});
+
   var oBank = document.getElementsByClassName("win_bank");
 
   bankTop(oBank[0]);

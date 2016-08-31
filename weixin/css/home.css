@@ -24,12 +24,12 @@
 }
 .banner_img li:nth-child(2){
   height: 100%;width: 375px;float: left;
-  background: url(../img/home/banner01.png);
+  background: url(../img/home/banner02.png);
   background-size: 100%;
 }
 .banner_img li:nth-child(3){
   height: 100%;width: 375px;float: left;
-  background: url(../img/home/banner01.png);
+  background: url(../img/home/banner03.png);
   background-size: 100%;
 }
 .banner_img li:nth-child(4){
@@ -174,7 +174,7 @@
 .guide_right{
   width: 48%;height: 100%;
   margin-left: 0.5rem;
-  background: url(../img/home/low.png);
+  background: url(../img/home/low2.png);
   background-size: 100%;
   float:left;  
 }
