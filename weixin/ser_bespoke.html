@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=320,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta charset="UTF-8">
+  <title>服务事项</title>
+  <link rel="stylesheet" href="css/public.css">
+  <link rel="stylesheet" href="css/ser_public.css">
+  <style>
+    .content_pro{width: 92%;margin:0 auto;background:#f72;margin:0 auto;font-size: .8rem;
+    font-weight: 600;text-align: center;height: 2rem;border-radius: .2rem; line-height: 2rem;color:#fff;
+    }
+    .window{background: #fff;}
+    .window p{color:#111;text-align: left;padding-left: .8rem;margin-bottom: -.5rem;
+      color:#f72;font-size: .6rem;background: #e6e6e6;margin-top: .8rem;
+      display: block;}
+    span{color:red;}
+    input{height: 1.5rem;font-size: .6rem;background: #e6e6e6;}
+    .div1 p{color:#333;background: #fff;}
+  </style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="menu">
+    <ul style="margin-top: 0">
+      <li><a href="ser_use.html">用户信息</a></li>
+      <li style="background: #f72;"><a href="javascript:;" style="color:#fff;">我要预约</a></li>
+      <li><a href="ser_proposal.html">投诉建议</a></li>
+      <li><a href="ser_query.html">办件查询</a></li>
+    </ul>
+  </div>
+
+  <div class="content_pro">
+    <h4>预约资料</h4>
+    <div class="window">
+      <form action="">
+        <p>申请人：<input type="text" placeholder="请输入姓名"><span>&nbsp;*</span></p>
+        <p>联系电话：<input type="text" placeholder="请输入姓名"><span>&nbsp;*</span></p>
+        <p>邮箱：<input type="text" placeholder="请输入您的邮箱"><span>&nbsp;*</span></p>
+        <p>预约事项：
+          <select style="width: 60%;">
+            <option>个人办事</option>
+            <option selected="selected">企业办事</option>
+            <option>其他事项</option>
+          </select><span>&nbsp;*</span>
+        </p>
+        <p>预约时间：
+          <select style="width: 50%;">
+            <option>9：00</option>
+            <option selected="selected">10：00</option>
+            <option>11：00</option>
+          </select><span>&nbsp;*</span>
+          <select style="width: 20%;">
+            <option>上午</option>
+            <option selected="selected">下午</option>
+          </select><span>&nbsp;*</span>
+        </p>
+        <p>预约窗口：
+          <select style="width: 60%;">
+            <option>发改</option>
+            <option selected="selected">气象</option>
+            <option>城管</option>
+          </select><span>&nbsp;*</span>
+        </p>
+        <p>预约说明：</p>
+        <textarea style="width:88%;height:10rem;padding:10px;margin-top: 1rem;background: #e6e6e6;" placeholder="不超过500字"></textarea><span>&nbsp;*</span>
+        <div class="div1">
+          <p><span>*</span>为必填内容。</p>
+          <p>中心为那些不能再工作日办理的特殊申请提供预约周末办事的便民服务。</p>
+          <p>请选择您需要预约的窗口及申请办理服务事项，并填写预约说明。在收到窗口预约确认后，请务必在约定的日期与时间段到中心办理。如有变化，请及时电话通知预约窗口。</p>
+          <p>为了能及时将处理结果告诉您或者便于我们进一步核实，请尽可能留下您的联系方式。</p>
+          <p>预约记录默认公开，您也可以在提交前选择不同意公开。</p>
+        </div>
+        <label><input type="checkbox" name="male" style="margin-top: 10px;"><span style="margin-bottom:1.5rem;">同意公开预约内容及姓名（电话、电邮不公开）</span></label><br>
+        <input type="submit" value="重置" style="background: #f72;color:#fff;padding: .2rem 1rem;margin:0 2rem;border-radius: 4px;">
+        <input type="submit" value="提交" style="background: #f72;color:#fff;padding: .2rem 1rem;margin:0 2rem;border-radius: 4px;">
+      </form>
+
+      <div style="height: 30px;"></div>
+      <div class="win_bank">
+        <img src="img/service/top0.6.png" width="25" height="25">
+      </div>
+    </div>
+  </div>
+
+
+</div>  
+</body>
+<script>
+  //置顶
+  (function bank(){
+    var oBank = document.getElementsByClassName("win_bank");
+
+    bankTop(oBank[0]);
+      
+  function bankTop(obj){
+    obj.addEventListener("touchstart",function(){
+      var H = document.body.scrollTop;
+      var timer = setInterval(function(){
+        H -=16;
+        document.body.scrollTop = H;
+        if (H <= 0) {
+          clearInterval(timer);
+        } 
+      },10);
+    });
+  }
+  })();
+</script>
+</html>

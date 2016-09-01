@@ -1,0 +1,26 @@
+.sub_1{
+  padding:0 .5rem;
+}
+.sub_g{
+  width: auto;height: 2rem;
+  margin:1rem 0 1rem 0;
+  border:2px solid #f72;
+  font-size: .9rem;
+  text-align: center;
+  line-height: 2rem;
+  color:#fcaa7b;
+  border-radius: 6px;
+}
+.sub_1_p{
+  text-align: center;
+  font-size: .6rem;
+  margin:.8rem 0;
+  color:#999;
+}
+.sub_con{
+  background: #e6e6e6;
+  color:#111;
+  font-size: .8rem;
+  line-height: 1.5rem;
+  padding: .2rem .8rem;
+}

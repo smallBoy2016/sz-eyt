@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=320,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta charset="UTF-8">
+  <title>服务事项</title>
+  <link rel="stylesheet" href="css/public.css">
+  <link rel="stylesheet" href="css/ser_public.css">
+  <link rel="stylesheet" href="css/query.css">
+</head>
+<body>
+
+<div class="wrap">
+  <div class="menu">
+    <ul style="margin-top: 0">
+      <li><a href="ser_use.html">用户信息</a></li>
+      <li><a href="ser_bespoke.html">我要预约</a></li>
+      <li><a href="ser_proposal.html">投诉建议</a></li>
+      <li style="background: #f72;"><a href="javascript:;" style="color:#fff;">办件查询</a></li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="c1">尊敬的用户，你的办件我们正在积极为您办理中，你可以随时跟进您的办理进度。</div>
+    <div class="c2">
+      <div class="ct_1">正在办理中</div>
+      <div class="c2_c">
+        <div>1xx酒店改建事项</div>
+        <div class="table">
+          <table class="gridtable">
+            <tbody id="table">
+              <tr>
+                <td>受理时间</td><td>2016.03.22</td>
+              </tr>
+              <tr>
+                <td>服务工号</td><td>100212</td>
+              </tr>
+              <tr>
+                <td>服务窗口</td><td>发改</td>
+              </tr>
+              <tr>
+                <td>服务类型</td><td>XXXXXXXX</td>
+              </tr>
+              <tr>
+                <td>承诺期限</td><td>2016.03.22</td>
+              </tr>
+            </tbody> 
+          </table>
+        </div>
+      </div>
+      <div class="c2_c">
+        <div>1xx酒店改建事项</div>
+        <div class="table">
+          <table class="gridtable">
+            <tbody id="table">
+              <tr>
+                <td>受理时间</td><td>2016.03.22</td>
+              </tr>
+              <tr>
+                <td>服务工号</td><td>100212</td>
+              </tr>
+              <tr>
+                <td>服务窗口</td><td>发改</td>
+              </tr>
+              <tr>
+                <td>服务类型</td><td>XXXXXXXX</td>
+              </tr>
+              <tr>
+                <td>承诺期限</td><td>2016.03.22</td>
+              </tr>
+            </tbody> 
+          </table>
+        </div>
+      </div>
+      <div class="c2_c">
+        <div>1xx酒店改建事项</div>
+        <div class="table">
+          <table class="gridtable">
+            <tbody id="table">
+              <tr>
+                <td>受理时间</td><td>2016.03.22</td>
+              </tr>
+              <tr>
+                <td>服务工号</td><td>100212</td>
+              </tr>
+              <tr>
+                <td>服务窗口</td><td>发改</td>
+              </tr>
+              <tr>
+                <td>服务类型</td><td>XXXXXXXX</td>
+              </tr>
+              <tr>
+                <td>承诺期限</td><td>2016.03.22</td>
+              </tr>
+            </tbody> 
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="c2">
+      <div class="ct_1">结束办理</div>
+      <div class="c2_c" style="height: .6rem">
+        <div>1xx酒店改建事项</div>
+        <div class="table" style="display: none">
+          <table class="gridtable">
+            <tbody id="table">
+              <tr>
+                <td>受理时间</td><td>2016.03.22</td>
+              </tr>
+              <tr>
+                <td>服务工号</td><td>100212</td>
+              </tr>
+              <tr>
+                <td>服务窗口</td><td>发改</td>
+              </tr>
+              <tr>
+                <td>服务类型</td><td>XXXXXXXX</td>
+              </tr>
+              <tr>
+                <td>承诺期限</td><td>2016.03.22</td>
+              </tr>
+            </tbody> 
+          </table>
+        </div>
+      </div>
+      <div class="c2_c" style="height: .6rem">
+        <div>1xx酒店改建事项</div>
+        <div class="table" style="display: none">
+          <table class="gridtable">
+            <tbody id="table">
+              <tr>
+                <td>受理时间</td><td>2016.03.22</td>
+              </tr>
+              <tr>
+                <td>服务工号</td><td>100212</td>
+              </tr>
+              <tr>
+                <td>服务窗口</td><td>发改</td>
+              </tr>
+              <tr>
+                <td>服务类型</td><td>XXXXXXXX</td>
+              </tr>
+              <tr>
+                <td>承诺期限</td><td>2016.03.22</td>
+              </tr>
+            </tbody> 
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="win_bank">
+    <img src="img/service/top0.6.png" width="25" height="25">
+  </div>
+</div>  
+</body>
+<script>
+
+//办事下拉
+//获取隐藏体（c2c\table），按钮体(div[0])
+var aC2 = document.getElementsByClassName('c2_c');
+// var oBtn = aC2[0].getElementsByTagName('div');
+var on = true;
+for(var i=0;i<aC2.length;i++){
+  aC2[i].index = i;
+  // alert(aC2[i].index);
+  aC2[i].getElementsByTagName('div')[0].addEventListener("touchstart",function(){
+    var k = this.parentNode.index;
+    if(on){
+
+      aC2[this.parentNode.index].style.height = '.6rem';
+      // console.log(this.nextSibling);
+      this.parentNode.getElementsByTagName('div')[1].style.display = 'none'; 
+      on = false;
+    }else{
+      if(this.parentNode.index!=2){
+        aC2[this.parentNode.index].style.height = '15rem';
+        // console.log(this.nextSibling);
+        this.parentNode.getElementsByTagName('div')[1].style.display = 'block'; 
+        on = true;
+      }
+
+    }
+
+});
+}
+
+// oBtn[0].addEventListener("touchstart",function(){
+//   alert(1);
+// });
+// alert(aC2.length);
+// alert(oBtn.length);
+  //置顶
+  (function bank(){
+    var oBank = document.getElementsByClassName("win_bank");
+
+    bankTop(oBank[0]);
+      
+  function bankTop(obj){
+    obj.addEventListener("touchstart",function(){
+      var H = document.body.scrollTop;
+      var timer = setInterval(function(){
+        H -=16;
+        document.body.scrollTop = H;
+        if (H <= 0) {
+          clearInterval(timer);
+        } 
+      },10);
+    });
+  }
+  })();
+</script>
+</html>

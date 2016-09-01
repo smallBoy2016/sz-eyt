@@ -1,0 +1,21 @@
+
+.win_2{
+  width: 92%;
+  height: auto;
+  margin:0 auto;
+  background: #e6e6e6;
+}
+.win_2 ul li{
+  width: 3.5rem;
+  height: 4rem;
+  box-shadow: 0 2px 1px #999;
+  float: left;
+  text-align: center;
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+.win_2 ul li p{
+  color:#333;
+  font-size: .8rem;
+}
+
