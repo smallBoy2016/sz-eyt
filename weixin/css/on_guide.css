@@ -39,9 +39,15 @@
 }
 .content_1{
   height: 22rem;
-  border:1px solid #ccc;
 }
-.content_1 ul{
+.content_1 div:nth-child(2){
+  height: 13.5rem;
+  width: 360px;
+  background: red;
+  background: url(../img/online/buju.png);
+  background-size: 100%;
+}
+/* .content_1 ul{
   margin-top: -.5rem;
 }
 .content_1 ul li{
@@ -55,7 +61,7 @@
   margin:.3rem 1rem;
   color:#f72;
   box-shadow: 1px 3px 6px #ccc;
-}
+} */
 #ul2 li{
   background: #e6e6e6;
   height: 4rem;position: relative;
@@ -110,4 +116,30 @@
   line-height: 2rem;
   color:#fcaa7b;
   border-radius: 6px;
+}
+.content_5 div:nth-child(2){
+  height: 260px;background:url(../img/online/this.png);
+  background-size:100%;
+}
+@media screen and (min-width: 320px) and (max-width: 374px){
+  #ul li{
+    width: 20%;
+    margin:.3rem .4rem;
+  }
+  .content_1 div:nth-child(2){
+    height: 11.6rem;
+    width: 310px;
+    }
+  .content_5 div:nth-child(2){
+    height: 230px;
+  } 
+}
+@media screen and (min-width: 414px){
+ .content_1 div:nth-child(2){
+   height: 15.1rem;
+   width: 404px;
+   } 
+  .content_5 div:nth-child(2){
+    height: 290px;
+  }
 }

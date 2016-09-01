@@ -16,7 +16,7 @@ a{
 .wrap{
   width: 100%;
   height: 100%;
-  max-width: 768px;
+  max-width: 639px;
   margin:0 auto;
 }
 .win_bank{
@@ -37,7 +37,7 @@ a{
   }
 }
 
-@media screen and (min-width: 414px) and (max-width: 960px){
+@media screen and (min-width: 414px){
   .wrap{
     max-width: 414px;
   }

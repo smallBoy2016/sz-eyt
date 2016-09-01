@@ -12,6 +12,7 @@
   position: relative;
   overflow: hidden;
   width: auto;
+  height: 5rem;
 }
 .banner_img{
   height: 100%;
@@ -90,7 +91,7 @@
 .menu ul li{
   width: 19%;
   height: 33%;
-  margin-left: 3.8%;
+  margin-left: 9.8%;
   margin-top: 4%;
   display: inline-block;
 }
@@ -226,6 +227,7 @@
 @media screen and (min-width: 375px) and (max-width: 413px){
   .banner{
     height: 12.5rem;
+    max-width: 375px;
   }
   .menu{
     height: 12rem;
@@ -235,9 +237,11 @@
   }
 }
 /*iphone 6 plus*/
-@media screen and (min-width: 414px) and (max-width: 639px){
+@media screen and (min-width: 414px){
   .banner{
     height: 13.8rem;
+    max-height: 13.8rem;
+    max-width: 414px;
   }
   .banner_img{
     width: 1656px;
@@ -284,3 +288,8 @@
     height: 3rem;
   }
 } */
+@media screen and (min-width: 960px){
+  .wrap{
+    max-width: 30rem;
+  }
+}

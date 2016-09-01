@@ -50,20 +50,12 @@
         <a href="javascript:;">常用热线</a>
       </li>
       <li>
-        <div><img src="img/home/home_icon05.png" width=22 height=23 alt=""></div>
-        <a href="javascript:;">办件查询</a>
-      </li>
-      <li>
         <div><img src="img/home/home_icon06.png" width=22 height=23 alt=""></div>
         <a href="javascript:;">办事指南</a>
       </li>
       <li>
         <div><img src="img/home/home_icon07.png" width=22 height=23 alt=""></div>
-        <a href="javascript:;">窗口介绍</a>
-      </li>
-      <li>
-        <div><img src="img/home/home_icon08.png" width=22 height=23 alt=""></div>
-        <a href="javascript:;">我要预约</a>
+        <a href="javascript:;">走进中心</a>
       </li>
     </ul>
   </div>
@@ -110,39 +102,30 @@ window.onload = function(){
   var allA = document.getElementsByTagName('a');
 
   var news_title = document.getElementsByClassName('news_title');
+  var Span = news_title[0].getElementsByTagName('span');
+  // alert(Span.length);
   var guide_left = document.getElementsByClassName('guide_left');
+  var guideImg = guide_left[0].getElementsByTagName('img');
   var guide_right = document.getElementsByClassName('guide_right');
-  var arrPath = [
-    "ser_green_path.html",
-    "ser_green_path.html",
-  ];
+  var guideImg2 = guide_right[0].getElementsByTagName('img');
+ 
 
-
-  for(var i=0;i<allA.length;i++){
-    allA[i].parentNode.addEventListener('touchstart',function(){
-      // baidu();
-    });
-  }
-
-  allA[0].parentNode.addEventListener('touchstart',function(){
+  allA[0].addEventListener('touchstart',function(){
     window.location.href = 'ser_green_path.html';
   });
-  allA[5].parentNode.addEventListener('touchstart',function(){
+  allA[4].addEventListener('touchstart',function(){
     window.location.href = 'on_guide.html';
   });
-  allA[6].parentNode.addEventListener('touchstart',function(){
-    window.location.href = 'ser_window.html';
+  allA[5].addEventListener('touchstart',function(){
+    window.location.href = 'on_core.html';
   });
-  allA[7].parentNode.addEventListener('touchstart',function(){
-    window.location.href = 'ser_guide.html';
-  });
-  news_title[0].parentNode.addEventListener('touchstart',function(){
+  Span[0].addEventListener('touchstart',function(){
     window.location.href = 'on_news.html';
   });
-  guide_left[0].addEventListener('touchstart',function(){
+  guideImg[0].addEventListener('touchstart',function(){
     window.location.href = 'on_policy.html';
   });
-  guide_right[0].addEventListener('touchstart',function(){
+  guideImg2[0].addEventListener('touchstart',function(){
     window.location.href = 'ser_guide.html';
   });
 
